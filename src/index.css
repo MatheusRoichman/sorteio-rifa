@@ -15,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font: 1.2rem/1.6 'Ubuntu Mono', monospace;
 }
 
@@ -28,16 +29,30 @@ h4 {
 }
 
 button {
-  background-color: lightskyblue;
+  background-color: #2e54fa;
   color: white;
   border: 0;
   border-radius: 15px;
   padding: 1.25rem;
   font-size: 1.5rem;
-  box-shadow: 0 0 1em gray;
+  box-shadow: 0 0 0.5em gray;
   margin-top: 2rem;
+  transition: all 0.5s ease-in-out;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: #2e20fa;
+  box-shadow: 0 0 1em gray;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.5em 0;
+}
+
+footer p {
+  width: 100vw;
 }
